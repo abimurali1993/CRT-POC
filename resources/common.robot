@@ -4,7 +4,7 @@ Library                   QWeb
 
 *** Variables ***
 ${BROWSER}                edge
-${username}               istautomation_csr@attone.com
+${username}               istautomation_csr@attone.com.accint
 ${password}               Secret#12
 ${login_url}              https://attone--accint.sandbox.my.salesforce.com           
 ${InteractionType}        Inboundd
