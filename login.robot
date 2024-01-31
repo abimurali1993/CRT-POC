@@ -11,4 +11,4 @@ Library    QWeb
 Login
     [Documentation]    Test Case created using the QEditor
 
-Suite Setup    OpenBrowser    about:blank   Chrome
+Suite Setup    OpenBrowser    about:blank   chrome
