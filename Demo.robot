@@ -21,13 +21,13 @@ Demo Test Case
     ClickText    Search Customer
     TypeText    Account Number    114433781
     ClickText                     Search    anchor= Customer Account Search
+    # ClickText    Search    anchor=InteractionI-0117761820
+    ClickText    Search            partial_match=False
 
-    ClickText    Search    anchor=InteractionI-0117761820
+    DropDown     Authentication Type        One-Time Pin (OTP)  
 
-
-    DropDown     Authentication Type        One-Time Pin (OTP) 
-    PickList     Authentication Type        One-Time Pin (OTP) 
-    PickList     Contact Method             \*@att.com    partial_match=False
+    ClickText    M****@att.com    anchor=Authentication Type
+    # PickList     Contact Method             \*@att.com    partial_match=False
 
     ${count}=   GetPickListCount        Contact Method 
     
