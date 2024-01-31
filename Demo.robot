@@ -24,10 +24,13 @@ Demo Test Case
     # ClickText    Search    anchor=InteractionI-0117761820
     ClickText    Search            partial_match=False
 
-    DropDown     Authentication Type        One-Time Pin (OTP)  
-
-    ClickText    M****@att.com    anchor=Authentication Type
+    QForce.VerifyText        Authentication Type            timeout=60
+    PickList          Authentication Type   One-Time Pin (OTP)
+    PickList          Contact Method    (***) **4-7480
+    # DropDown     Authentication Type        One-Time Pin (OTP)  
     # PickList     Contact Method             \*@att.com    partial_match=False
+
+    ClickText      Bypass
 
     ${count}=   GetPickListCount        Contact Method 
     
