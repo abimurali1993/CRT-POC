@@ -6,6 +6,7 @@ Library    QForce
 Library    QWeb
 Library    QVision
 
+Resource    resources/common.robot
 Suite Setup    OpenBrowser    about:blank    chrome
 Suite Teardown         Close All Browsers
 
@@ -34,3 +35,11 @@ Demo Test Case
 
     ${count}=   GetPickListCount        Contact Method 
     
+
+TC1
+    Login
+    VerifyText              Customer Search
+    ClickText    In-Person    anchor=*Interaction Type
+    ClickText    Inbound    anchor=Customer Search
+    ClickText    Search Customer
+    TypeText    Account Number    114433781
