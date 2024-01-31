@@ -11,4 +11,4 @@ Library    QWeb
 Login
     [Documentation]    Test Case created using the QEditor
 
-    OpenBrowser    https://attone--accint.sandbox.my.salesforce.com/?    edge
+Suite Setup    OpenBrowser    about:blank   Chrome
